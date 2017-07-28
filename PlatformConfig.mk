@@ -94,6 +94,7 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 TARGET_USES_SDE := true
 
 # Treble
+BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Build a separate vendor.img
