@@ -1,0 +1,24 @@
+genfscon sysfs /devices/platform/soc/894000.i2c                                 u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/a88000.i2c                                 u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/a98000.i2c                                 u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /devices/platform/soc/5000000.qcom,kgsl-3d0                      u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass                        u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp                      u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_rotator                  u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/4080000.qcom,mss                           u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi                          u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus                         u:object_r:sysfs_msm_subsys:s0
+
+genfscon sysfs /devices/platform/soc/ac4a000.qcom,cci                           u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/platform/soc/0.qcom,rmtfs_sharedmem                     u:object_r:sysfs_rmtfs:s0
+
+genfscon sysfs /devices/platform/soc/soc:fpc1145                                u:object_r:sysfs_fingerprint:s0
+
+
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000                       u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d300                       u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d800                       u:object_r:sysfs_leds:s0
+
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/power_supply/bms             u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/capacity                     u:object_r:sysfs_batteryinfo:s0
