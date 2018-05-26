@@ -31,7 +31,8 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    system
+    system \
+    vendor
 
 # Audio
 PRODUCT_COPY_FILES += \
