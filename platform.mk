@@ -27,7 +27,15 @@ SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 DEVICE_PACKAGE_OVERLAYS += \
     $(PLATFORM_COMMON_PATH)/overlay
 
+# A/B support
 AB_OTA_UPDATER := true
+
+#A/B related packages
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_client \
+    update_verifier \
+    bootctrl.sdm845
 
 AB_OTA_PARTITIONS += \
     boot \
