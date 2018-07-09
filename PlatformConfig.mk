@@ -41,6 +41,11 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=1d84000.ufshc
 
+# DTBO partition definitions
+ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
+TARGET_NEEDS_DTBOIMAGE := true
+endif
+
 # Serial console
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xa84000 androidboot.console=msm_serial_dm,0xa84000
 
