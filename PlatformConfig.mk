@@ -40,6 +40,8 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=1d84000.ufshc
+BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
+BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=dsi_panel_cmd_display:config0
 
 # Serial console
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xa84000 androidboot.console=msm_serial_dm,0xa84000
