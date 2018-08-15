@@ -45,6 +45,11 @@ BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=dsi_panel_cmd_display:config0
 BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
 
+# DTBO partition definitions
+ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
+TARGET_NEEDS_DTBOIMAGE := true
+endif
+
 # Serial console
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xa84000
 
