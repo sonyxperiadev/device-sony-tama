@@ -30,12 +30,20 @@ DEVICE_PACKAGE_OVERLAYS += \
 # A/B support
 AB_OTA_UPDATER := true
 
-#A/B related packages
+# A/B related packages
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_client \
     update_verifier \
     bootctrl.sdm845
+
+# Enable update engine sideloading by including the static version of the
+# boot_control HAL and its dependencies.
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    bootctrl.sdm845 \
+    libgptutils \
+    libz \
+    libcutils
 
 AB_OTA_PARTITIONS += \
     boot \
