@@ -184,4 +184,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #WiFi MAC address path
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wifi.addr_path=/data/misc/wifi/wlan_mac.bin
+    ro.wifi.addr_path=/data/vendor/wifi/wlan_mac.bin
