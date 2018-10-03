@@ -45,6 +45,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_client \
+    update_engine_sideload \
     update_verifier \
     bootctrl.sdm845
 
@@ -60,6 +61,11 @@ AB_OTA_PARTITIONS += \
     boot \
     system \
     vendor
+
+# Treble
+# Include vndk/vndk-sp/ll-ndk modules
+PRODUCT_PACKAGES += \
+    vndk_package
 
 # Audio
 PRODUCT_COPY_FILES += \
