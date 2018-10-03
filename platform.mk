@@ -45,6 +45,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_client \
+    update_engine_sideload \
     update_verifier \
     bootctrl.sdm845
 
