@@ -95,7 +95,7 @@ TARGET_USES_SDE := true
 
 # Treble
 BOARD_VNDK_VERSION := current
-PRODUCT_SHIPPING_API_LEVEL := 26
+PRODUCT_SHIPPING_API_LEVEL ?= 26
 
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
