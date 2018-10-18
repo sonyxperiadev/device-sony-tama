@@ -342,57 +342,9 @@ Only the three quirks included above are recognized at this point:
                 <Limit name="frame-rate" range="1-30" />
                 <Limit name="concurrent-instances" max="16" />
         </MediaCodec>
-        <MediaCodec name="OMX.qti.video.decoder.divxsw" type="video/divx" >
-            <Quirk name="requires-allocate-on-input-ports" />
-            <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="size" min="16x16" max="1920x1088" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="1" max="244800" />
-            <Limit name="frame-rate" range="1-30" />
-            <Limit name="bitrate" range="1-10000000" />
-            <Limit name="concurrent-instances" max="16" />
-        </MediaCodec>
-        <MediaCodec name="OMX.qti.video.decoder.divx4sw" type="video/divx4" >
-            <Quirk name="requires-allocate-on-input-ports" />
-            <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="size" min="16x16" max="1920x1088" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="1" max="244800" />
-            <Limit name="frame-rate" range="1-30" />
-            <Limit name="bitrate" range="1-10000000" />
-            <Limit name="concurrent-instances" max="16" />
-        </MediaCodec>
-        <MediaCodec name="OMX.qti.video.decoder.vc1sw" type="video/x-ms-wmv" >
-            <Quirk name="requires-allocate-on-input-ports" />
-            <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="size" min="64x64" max="1920x1088" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="1" max="244800" />
-            <Limit name="bitrate" range="1-20000000" />
-            <Limit name="frame-rate" range="1-30" />
-            <Feature name="adaptive-playback" />
-            <Limit name="concurrent-instances" max="16" />
-        </MediaCodec>
-        <!-- Audio Hardware  -->
-        <MediaCodec name="OMX.qcom.audio.decoder.wma" type="audio/x-ms-wma" >
-            <Limit name="channel-count" max="2" />
-            <Limit name="sample-rate" ranges="8000,11025,16000,22050,32000,44100,48000" />
-            <Limit name="bitrate" range="8000-320000" />
-        </MediaCodec>
         <!-- Audio Software  -->
         <MediaCodec name="OMX.qti.audio.decoder.flac" type="audio/flac" >
             <Limit name="concurrent-instances" max="10" />
-        </MediaCodec>
-        <MediaCodec name="OMX.qti.audio.decoder.alac.sw" type="audio/alac" >
-            <Limit name="channel-count" max="6" />
-            <Limit name="sample-rate" ranges="8000,16000,22050,24000,32000,44100,48000,88200,96000,176400,192000" />
-        </MediaCodec>
-        <MediaCodec name="OMX.qti.audio.decoder.dsd" type="audio/dsd" >
-            <Limit name="channel-count" max="2" />
-            <Limit name="sample-rate" ranges="2822400-2822400" />
         </MediaCodec>
     </Decoders>
     <Include href="media_codecs_google_video.xml" />
