@@ -87,7 +87,8 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_FULL_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="SLIMBUS_6_RX"/>
         <device name="SND_DEVICE_OUT_HDMI" backend="hdmi" interface="HDMI"/>
-        <device name="SND_DEVICE_OUT_VOICE_TX" backend="afe-proxy" interface="SLIMBUS_0_RX"/>
+        <device name="SND_DEVICE_OUT_AFE_PROXY" backend="afe-proxy" interface="PROXY_PORT_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_TX" interface="SLIMBUS_0_RX"/>
     </backend_names>
     <microphone_characteristics>
         <microphone valid_mask="31" device_id="builtin_mic_1" type="AUDIO_DEVICE_IN_BUILTIN_MIC" address="bottom" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
