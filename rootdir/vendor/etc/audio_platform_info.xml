@@ -33,6 +33,8 @@
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="6"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" acdb_id="577"/>
         <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" acdb_id="578"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC_AEC" acdb_id="579"/>
+        <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="544"/>
     </acdb_ids>
     <pcm_ids>
         <usecase name="USECASE_AUDIO_PLAYBACK_LOW_LATENCY" type="out" id="13"/>
