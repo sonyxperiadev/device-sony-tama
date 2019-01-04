@@ -10,6 +10,7 @@ genfscon sysfs /devices/platform/soc/4080000.qcom,mss                           
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi                          u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/aae0000.qcom,venus                         u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/8300000.qcom,turing                        u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws                           u:object_r:sysfs_msm_subsys:s0
 
 genfscon sysfs /devices/platform/soc/ac4a000.qcom,cci                           u:object_r:sysfs_camera:s0
 
