@@ -31,15 +31,3 @@ on boot
     # CPU is isolated/hotplugged, the IRQ affinity is adjusted
     # to one of the CPU from the default IRQ affinity mask.
     write /proc/irq/default_smp_affinity f
-
-    # set up correct restart levels for subsystems
-    # venus
-    write /sys/devices/platform/soc/4080000.qcom,mss/subsys1/restart_level RELATED
-    # adsp
-    write /sys/devices/platform/soc/17300000.qcom,lpass/subsys4/restart_level RELATED
-    # slpi
-    write /sys/devices/platform/soc/5c00000.qcom,ssc/subsys5/restart_level RELATED
-    # cdsp
-    write /sys/devices/platform/soc/8300000.qcom,turing/subsys6/restart_level RELATED
-    # modem
-    write /sys/devices/platform/soc/4080000.qcom,mss/subsys7/restart_level RELATED
