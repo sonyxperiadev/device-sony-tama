@@ -60,21 +60,40 @@ on boot
     # Disable thermal
     write /sys/module/msm_thermal/core_control/enabled 0
 
-    # configure governor settings for little cluster
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rate_limit_us 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1209600
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/pl 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 576000
+    # enable governor for power cluster
+    write /sys/devices/system/cpu/cpu0/online 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay 19000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load 90
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate 20000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 1324800
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "83 1766400:95"
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time 19000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis 79000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/ignore_hispeed_on_notif 1
 
-    # configure governor settings for big cluster
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rate_limit_us 0
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq 1574400
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl 1
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 825000
+    # enable governor for perf cluster
+    write /sys/devices/system/cpu/cpu4/online 1
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load 1
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_migration_notif 1
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay 19000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load 90
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate 20000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq 1612800
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy 1
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads "83 1920000:90 2092800:95"
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time 19000
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/max_freq_hysteresis 79000
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 825600
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/ignore_hispeed_on_notif 1
+
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1324800"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 120
+    write /sys/module/cpu_boost/parameters/input_boost_ms 80
 
     write /proc/sys/kernel/sched_boost 0
 
