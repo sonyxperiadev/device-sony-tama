@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- Copyright (C) 2017 AngeloGioacchino Del Regno <kholk11@gmail.com>        -->
+<!-- Copyright (C) 2019 AngeloGioacchino Del Regno <kholk11@gmail.com>        -->
 <!--                                                                          -->
 <!-- Licensed under the Apache License, Version 2.0 (the "License");          -->
 <!-- you may not use this file except in compliance with the License.         -->
@@ -18,37 +18,56 @@
     <batterysave>
         <cpuquiet min_cpus="1" max_cpus="3"/>
         <rqbalance balance_level="80"/>
-        <rqbalance down_thresholds="0 120 300 380 420 490 530 670"/>
-        <rqbalance   up_thresholds="200 400 500 530 590 620 730 4294967295"/>
+        <rqbalance down_thresholds="0 120 320 400 440 500 550 700"/>
+        <rqbalance   up_thresholds="200 450 550 580 600 640 750 4294967295"/>
+        <rqbalance cluster0_freq_min="0"/>
+        <rqbalance cluster0_freq_max="1132800"/>
+        <rqbalance cluster1_freq_min="0"/>
+        <rqbalance cluster1_freq_max="1209600"/>
     </batterysave>
 
     <balanced>
         <cpuquiet min_cpus="2" max_cpus="8"/>
         <rqbalance balance_level="40"/>
-        <rqbalance down_thresholds="0 70 200 280 300 400 470 545"/>
-        <rqbalance   up_thresholds="100 300 380 400 460 525 600 4294967295"/>
+        <rqbalance down_thresholds="0 70 200 280 330 450 505 565"/>
+        <rqbalance   up_thresholds="100 300 380 400 500 545 605 4294967295"/>
     </balanced>
 
     <performance>
         <cpuquiet min_cpus="8" max_cpus="8"/>
         <rqbalance balance_level="40"/>
-        <rqbalance down_thresholds="0 70 200 280 300 400 470 545"/>
-        <rqbalance   up_thresholds="100 300 380 400 460 525 600 4294967295"/>
+        <rqbalance down_thresholds="0 70 200 280 330 450 505 545"/>
+        <rqbalance   up_thresholds="100 300 380 400 500 525 615 4294967295"/>
+        <rqbalance cluster0_freq_min="1516800"/>
+        <rqbalance cluster0_freq_max="1766400"/>
+        <rqbalance cluster1_freq_min="2323200"/>
+        <rqbalance cluster1_freq_max="2649600"/>
     </performance>
 
     <video_decoding>
         <cpuquiet min_cpus="2" max_cpus="4"/>
         <rqbalance balance_level="40"/>
-        <rqbalance down_thresholds="0 70 200 280 300 400 470 545"/>
-        <rqbalance   up_thresholds="100 300 380 400 460 525 600 4294967295"/>
+        <rqbalance down_thresholds="0 70 200 280 330 450 515 585"/>
+        <rqbalance   up_thresholds="100 300 380 400 500 575 625 4294967295"/>
     </video_decoding>
 
     <video_encoding>
         <cpuquiet min_cpus="3" max_cpus="4"/>
         <rqbalance balance_level="60"/>
-        <rqbalance down_thresholds="0 70 200 280 300 400 470 545"/>
-        <rqbalance   up_thresholds="100 300 380 400 460 525 600 4294967295"/>
+        <rqbalance down_thresholds="0 70 200 280 330 450 515 585"/>
+        <rqbalance   up_thresholds="100 300 380 400 500 575 625 4294967295"/>
     </video_encoding>
+
+    <sustained_perf>
+        <cpuquiet min_cpus="4" max_cpus="6"/>
+        <rqbalance balance_level="40"/>
+        <rqbalance down_thresholds="0 70 200 280 330 450 515 585"/>
+        <rqbalance   up_thresholds="100 300 380 400 500 575 625 4294967295"/>
+        <rqbalance cluster0_freq_min="0"/>
+        <rqbalance cluster0_freq_max="1516800"/>
+        <rqbalance cluster1_freq_min="0"/>
+        <rqbalance cluster1_freq_max="1996800"/>
+    </sustained_perf>
 
 </rqbalance_config>
 
