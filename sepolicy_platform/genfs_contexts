@@ -20,6 +20,7 @@ genfscon sysfs /devices/platform/soc/soc:fpc1145                                
 
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/net                    u:object_r:sysfs_net:s0
 
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight                                                        u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000                       u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d300                       u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d800                       u:object_r:sysfs_leds:s0
