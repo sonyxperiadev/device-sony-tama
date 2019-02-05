@@ -29,6 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # A/B support
 AB_OTA_UPDATER := true
+TARGET_USES_HARDWARE_QCOM_BOOTCTRL := true
 
 # A/B OTA dexopt package
 PRODUCT_PACKAGES += \
