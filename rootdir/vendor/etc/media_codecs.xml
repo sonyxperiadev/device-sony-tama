@@ -342,10 +342,6 @@ Only the three quirks included above are recognized at this point:
                 <Limit name="frame-rate" range="1-30" />
                 <Limit name="concurrent-instances" max="16" />
         </MediaCodec>
-        <!-- Audio Software  -->
-        <MediaCodec name="OMX.qti.audio.decoder.flac" type="audio/flac" >
-            <Limit name="concurrent-instances" max="10" />
-        </MediaCodec>
     </Decoders>
     <Include href="media_codecs_google_video.xml" />
 </MediaCodecs>
