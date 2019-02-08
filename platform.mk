@@ -68,6 +68,10 @@ AB_OTA_PARTITIONS += \
 PRODUCT_PACKAGES += \
     vndk_package
 
+# Device Specific Permissions
+PRODUCT_COPY_FILES += \
+     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/vendor/etc/audio_tuning_mixer_tavil.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tavil.txt \
