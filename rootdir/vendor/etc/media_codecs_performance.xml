@@ -79,13 +79,13 @@ limitations under the License.
     </Encoders>
     <Decoders>
         <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="101-221" />
+            <Limit name="measured-frame-rate-320x240" range="566-564" />
             <Limit name="measured-frame-rate-720x480" range="98-217" />
             <Limit name="measured-frame-rate-1280x720" range="98-216" />
             <Limit name="measured-frame-rate-1920x1088" range="76-167" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.hevc" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="104-228" />
+            <Limit name="measured-frame-rate-352x288" range="594-598" />
             <Limit name="measured-frame-rate-720x480" range="100-219" />
             <Limit name="measured-frame-rate-1280x720" range="101-222" />
             <Limit name="measured-frame-rate-1920x1080" range="118-259" />
@@ -100,6 +100,7 @@ limitations under the License.
             <Limit name="measured-frame-rate-480x360" range="270-540" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.vp8" type="video/x-vnd.on2.vp8" update="true">
+            <Limit name="measured-frame-rate-320x180" range="512-650" />
             <Limit name="measured-frame-rate-320x240" range="82-180" />
             <Limit name="measured-frame-rate-640x360" range="82-180" />
             <Limit name="measured-frame-rate-1280x720" range="131-289" />
@@ -135,6 +136,7 @@ limitations under the License.
             </Type>
         </MediaCodec>
         <MediaCodec name="OMX.google.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
+            <Limit name="measured-frame-rate-320x180" range="681-1315" />
             <Limit name="measured-frame-rate-320x240" range="86-190" />
             <Limit name="measured-frame-rate-640x360" range="189-415" />
             <Limit name="measured-frame-rate-1280x720" range="41-90" />
