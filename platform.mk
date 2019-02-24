@@ -60,6 +60,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 
 AB_OTA_PARTITIONS += \
     boot \
+    dtbo \
     system \
     vendor
 
