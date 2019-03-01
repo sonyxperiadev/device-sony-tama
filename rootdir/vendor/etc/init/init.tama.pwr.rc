@@ -166,7 +166,7 @@ on boot
 
     #Enable userspace governor for L3 cdsp nodes
     write /sys/class/devfreq/soc:qcom,l3-cdsp/governor "userspace"
-    chown -h system $l3cdsp/userspace/set_freq
+    chown -h system /sys/class/devfreq/soc:qcom,l3-cdsp/userspace/set_freq
 
     #Gold L3 ratio ceil
     write /sys/class/devfreq/soc:qcom,l3-cpu4/mem_latency/ratio_ceil 4000
