@@ -120,8 +120,6 @@ on property:sys.boot_completed=1
 
     # Turn on sleep modes.
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
-    write /proc/sys/vm/swappiness 100
-    write /proc/sys/vm/watermark_scale_factor 120
 
     # Enable accounting on CPUs hwmon and bus speed decision algos
     write /sys/class/devfreq/soc:qcom,cpubw/governor "bw_hwmon"
