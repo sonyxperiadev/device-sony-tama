@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    sound_trigger.primary.sdm845 \
     audio.primary.sdm845
 
 # GFX
