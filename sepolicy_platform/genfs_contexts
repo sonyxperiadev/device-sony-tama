@@ -35,3 +35,5 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/pc_port  u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/usb      u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/a88000.i2c/i2c-0/0-0061/power_supply/wireless                                                           u:object_r:sysfs_batteryinfo:s0
+
+genfscon sysfs /devices/virtual/input/lge_touch/glove_mode u:object_r:sysfs_glove_mode:s0
