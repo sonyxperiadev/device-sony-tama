@@ -47,6 +47,9 @@ on boot
     # to one of the CPU from the default IRQ affinity mask.
     write /proc/irq/default_smp_affinity f
 
+    # Set custom LMK parameters
+    write /sys/module/lowmemorykiller/parameters/forced_minfree 14746,18432,22118,25805,34415,43737
+
 on property:sys.boot_completed=1
     # Runtime fs tuning for runtime performance
     write /sys/block/sda/queue/read_ahead_kb 128
