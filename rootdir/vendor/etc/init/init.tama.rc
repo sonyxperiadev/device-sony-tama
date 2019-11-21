@@ -33,6 +33,7 @@ on init
 
 on boot
     # WLAN MAC
+    chmod 0664 /sys/module/wlan/parameters/fwpath
     chown wifi wifi /sys/module/wlan/parameters/fwpath
     chown wifi wifi /sys/kernel/boot_wlan/boot_wlan
 
