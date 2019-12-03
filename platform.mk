@@ -24,6 +24,9 @@ SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 DEVICE_PACKAGE_OVERLAYS += \
     $(PLATFORM_COMMON_PATH)/overlay
 
+# Graphics allocator/mapper v3
+TARGET_HARDWARE_GRAPHICS_V3 := true
+
 # A/B support
 AB_OTA_UPDATER := true
 PRODUCT_SHIPPING_API_LEVEL := 26
