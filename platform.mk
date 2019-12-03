@@ -56,7 +56,8 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vendor
+    vendor \
+    vbmeta
 
 # Treble
 # Include vndk/vndk-sp/ll-ndk modules
