@@ -18,15 +18,14 @@ PLATFORM_COMMON_PATH := device/sony/tama
 SOMC_PLATFORM := tama
 SOMC_KERNEL_VERSION := 4.14
 KERNEL_PATH := kernel/sony/msm-$(SOMC_KERNEL_VERSION)
-
-$(call inherit-product, device/sony/common/common.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-
 SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(PLATFORM_COMMON_PATH)/overlay
+
+# Graphics allocator/mapper v3
+TARGET_HARDWARE_GRAPHICS_V3 := true
 
 # A/B support
 AB_OTA_UPDATER := true
@@ -170,3 +169,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #WiFi MAC address path
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wifi.addr_path=/data/vendor/wifi/wlan_mac.bin
+
+$(call inherit-product, device/sony/common/common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
