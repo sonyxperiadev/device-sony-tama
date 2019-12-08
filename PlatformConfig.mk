@@ -112,4 +112,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
+# DTBO partition definitions
+TARGET_NEEDS_DTBOIMAGE ?= true
+
 include device/sony/common/CommonConfig.mk
