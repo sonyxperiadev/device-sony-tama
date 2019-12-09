@@ -16,12 +16,12 @@
 <rqbalance_config>
 
     <batterysave>
-        <cpuquiet min_cpus="1" max_cpus="3"/>
+        <cpuquiet min_cpus="2" max_cpus="4"/>
         <rqbalance balance_level="80"/>
         <rqbalance down_thresholds="0 120 320 400 440 500 550 700"/>
         <rqbalance   up_thresholds="200 450 550 580 600 640 750 4294967295"/>
         <rqbalance cluster0_freq_min="0"/>
-        <rqbalance cluster0_freq_max="1132800"/>
+        <rqbalance cluster0_freq_max="1324800"/>
         <rqbalance cluster1_freq_min="0"/>
         <rqbalance cluster1_freq_max="1209600"/>
     </batterysave>
