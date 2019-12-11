@@ -168,7 +168,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #WiFi MAC address path
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wifi.addr_path=/data/vendor/wifi/wlan_mac.bin
+    ro.vendor.wifi.addr_path=/data/vendor/wifi/wlan_mac.bin
 
 $(call inherit-product, device/sony/common/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
