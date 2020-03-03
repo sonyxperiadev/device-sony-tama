@@ -6,3 +6,4 @@ systemLogEnable=FALSE
 maxHalRequests=9
 numPCRsBeforeStreamOn=1
 preFlashMaxFrameWaitLimitAF=45
+overrideEnableMFNR=1
