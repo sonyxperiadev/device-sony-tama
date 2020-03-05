@@ -148,6 +148,61 @@ PRODUCT_PACKAGES += \
     sns_reg_config \
     hals.conf
 
+# SSC Common config
+PRODUCT_PACKAGES += \
+    ak991x_dri_0.json \
+    bma2x2_0.json \
+    bme680_0.json \
+    bmg160_0.json \
+    bmp285_0.json \
+    bmp380_0.json \
+    bu52053nvx_0.json \
+    cm3526_0.json \
+    default_sensors.json \
+    dps368_0.json \
+    lsm6dsm_0_16g.json \
+    lsm6dsm_0.json \
+    lsm6dso_0_16g.json \
+    lsm6dso_0.json \
+    shtw2_0.json \
+    sns_amd.json \
+    sns_amd_sw_disabled.json \
+    sns_amd_sw_enabled.json \
+    sns_aont.json \
+    sns_basic_gestures.json \
+    sns_bring_to_ear.json \
+    sns_ccd.json \
+    sns_cm.json \
+    sns_dae.json \
+    sns_device_orient.json \
+    sns_diag_filter.json \
+    sns_distance_bound.json \
+    sns_dpc.json \
+    sns_facing.json \
+    sns_fmv.json \
+    sns_geomag_rv.json \
+    sns_gyro_cal.json \
+    sns_mag_cal.json \
+    sns_multishake.json \
+    sns_pedometer.json \
+    sns_rmd.json \
+    sns_rotv.json \
+    sns_smd.json \
+    sns_tilt.json \
+    sns_tilt_sw_disabled.json \
+    sns_tilt_sw_enabled.json \
+    sns_tilt_to_wake.json \
+    tmd2725.json \
+    tmd3725.json \
+    tmx4903.json
+
+# Platform SSC Sensors
+PRODUCT_PACKAGES += \
+    sdm845_ak991x_0.json \
+    sdm845_bmp380_0.json \
+    sdm845_lsm6dsm_0.json \
+    sdm845_tmd2725.json
+
 # CAMERA
 TARGET_USES_64BIT_CAMERA := true
 
