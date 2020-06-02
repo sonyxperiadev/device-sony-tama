@@ -109,8 +109,7 @@ PRODUCT_COPY_FILES += \
 
 # FPC Gestures
 PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/vendor/usr/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
-    $(SONY_ROOT)/vendor/usr/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
+    $(SONY_ROOT)/vendor/usr/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
 
 # MSM IRQ Balancer configuration file
 PRODUCT_COPY_FILES += \
