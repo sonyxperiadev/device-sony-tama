@@ -234,6 +234,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     aaudio.hw_burst_min_usec=2000 \
     af.fast_track_multiplier=1
 
+# Audio - QCOM HAL
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.offload.buffer.size.kb=32
+
 # USB controller setup
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=a600000.dwc3 \
