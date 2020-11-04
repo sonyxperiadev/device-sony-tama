@@ -98,11 +98,10 @@
         <usecase name="USECASE_AUDIO_PLAYBACK_AFE_PROXY" type="out" id="6"/>
         <usecase name="USECASE_AUDIO_RECORD_AFE_PROXY" type="in" id="7"/>
         <usecase name="USECASE_AUDIO_RECORD_LOW_LATENCY" type="in" id="17" />
-        <usecase name="USECASE_AUDIO_PLAYBACK_ULL" type="out" id="17" />
         <usecase name="USECASE_AUDIO_PLAYBACK_SILENCE" type="out" id="27" />
         <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="16" />
         <usecase name="USECASE_AUDIO_RECORD_VOIP" type="in" id="16" />
-        <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="33" />
+        <usecase name="USECASE_AUDIO_PLAYBACK_MMAP" type="out" id="17" />
         <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="33" />
         <usecase name="USECASE_AUDIO_A2DP_ABR_FEEDBACK" type="in" id="40" />
     </pcm_ids>
