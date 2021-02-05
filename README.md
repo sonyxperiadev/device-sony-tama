@@ -1,13 +1,18 @@
+Tama platform
+=============
 Copyright (C) Sony Mobile Communications 2018
-=============================================
+---------------------------------------------
 
-This is the Android device configuration for tama platform.
+Android device configuration for the tama platform (**SDM845**).
 
-tama devices:
+### Supported devices
 
-    Xperia XZ2 ....................... akari
-    Xperia XZ2 Compact ............... apollo
-    Xperia XZ3 ....................... akatsuki
+| Device | Codename |
+|-|:-:|
+| Xperia XZ2 | [akari](https://github.com/sonyxperiadev/device-sony-akari) |
+| Xperia XZ2 Compact | [apollo](https://github.com/sonyxperiadev/device-sony-apollo) |
+| Xperia XZ3 | [akatsuki](https://github.com/sonyxperiadev/device-sony-akatsuki) |
 
-Build instructions
+### Build instructions
+
 https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/
