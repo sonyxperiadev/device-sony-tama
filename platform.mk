@@ -269,9 +269,6 @@ PRODUCT_PACKAGES += \
 # CAMERA
 TARGET_USES_64BIT_CAMERA := true
 
-PRODUCT_PACKAGES += \
-    camera.sdm845
-
 # Look for camera.qcom.so instead of camera.$(BOARD_TARGET_PLATFORM).so
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.camera=qcom
