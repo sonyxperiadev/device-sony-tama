@@ -64,6 +64,9 @@ NXP_CHIP_FW_TYPE := PN553
 # Audio
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
+# DSP
+TARGET_HAS_CDSP := true
+
 # SSC Sensors
 TARGET_USES_SSC := true
 
@@ -75,6 +78,9 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 
 # Lights HAL: Backlight
 TARGET_USES_SDE := true
+
+# Sscrpcd
+TARGET_NEEDS_SSCRPCD := true
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
