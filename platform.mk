@@ -61,9 +61,6 @@ NXP_CHIP_FW_TYPE := PN553
 # Audio
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
-# SSC Sensors
-TARGET_USES_SSC := true
-
 # Display
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
@@ -205,6 +202,10 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.sdm845
+
+# Sensors init
+PRODUCT_PACKAGES += \
+    sscrpcd.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
