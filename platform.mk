@@ -185,6 +185,11 @@ PRODUCT_PACKAGES += \
     init.tama.pwr \
     ueventd
 
+# CDSP init
+PRODUCT_PACKAGES += \
+    init.qcom.cdspstart.sh \
+    cdsprpcd.rc
+
 # Audio
 PRODUCT_PACKAGES += \
     sound_trigger.primary.sdm845 \
