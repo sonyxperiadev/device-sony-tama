@@ -182,6 +182,11 @@ PRODUCT_PACKAGES += \
     init.tama.pwr \
     ueventd
 
+# modemswitcher
+PRODUCT_PACKAGES += \
+    vendor.somc.hardware.modemswitcher@1.0-service.rc \
+    init.sony-modem-switcher.rc
+
 # CDSP init
 PRODUCT_PACKAGES += \
     init.qcom.cdspstart.sh \
