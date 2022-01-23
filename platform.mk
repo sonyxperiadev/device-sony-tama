@@ -94,9 +94,7 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_client \
     update_engine_sideload \
-    update_verifier \
-    bootctrl.sdm845 \
-    bootctrl.sdm845.recovery
+    update_verifier
 
 AB_OTA_PARTITIONS += \
     boot \
