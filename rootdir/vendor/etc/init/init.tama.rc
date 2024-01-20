@@ -35,7 +35,8 @@ on boot
     # WLAN MAC
     chmod 0664 /sys/module/wlan/parameters/fwpath
     chown wifi wifi /sys/module/wlan/parameters/fwpath
-    chown wifi wifi /sys/kernel/boot_wlan/boot_wlan
+    # Trigger WLAN driver load
+    write /sys/kernel/boot_wlan/boot_wlan 1
 
     # update foreground cpuset now that processors are up
     write /dev/cpuset/foreground/cpus 0-7
