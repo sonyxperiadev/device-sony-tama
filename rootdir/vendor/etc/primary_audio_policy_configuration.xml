@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- This file contains common entries for the "primary" module on the CAF audio HAL,
-     to be expanded into audio_policy_configuration.xml and their bluetooth/a2dp fallback variants.
--->
-<module>
+<!-- Default Primary Audio HAL Module Audio Policy Configuration include file -->
+<module name="primary" halVersion="2.0">
     <attachedDevices>
         <item>Earpiece</item>
         <item>Speaker</item>

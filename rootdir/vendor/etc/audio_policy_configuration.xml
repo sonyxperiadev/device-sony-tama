@@ -44,9 +44,7 @@
     -->
     <modules>
         <!-- Primary Audio HAL -->
-        <module name="primary" halVersion="2.0">
-            <xi:include href="common_primary_audio_policy_configuration.xml" xpointer="xpointer(/module/*)" />
-        </module>
+        <xi:include href="primary_audio_policy_configuration.xml" />
 
         <!-- Usb Audio HAL -->
         <xi:include href="usb_audio_policy_configuration.xml" />
